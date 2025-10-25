@@ -1,0 +1,19 @@
+{
+  "name": "bun-fullstack",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && bun build src/server.ts --outdir ./dist --target bun --sourcemap"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "typescript": "^5",
+    "@socket.io/bun-engine": "^0.0.3",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  }
+}
