@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "rimraf dist && bun build --target=bun --production --outdir=dist ./src/server.ts --external ./src/index.html  --packages external && bun build --production --outdir=dist src/index.html"
+    "build": "rimraf dist && bun build --target=bun --production --outdir=dist ./src/server.ts",
+    "build2": "rimraf dist && bun build --target=bun --production --outdir=dist ./src/server.ts --external ./src/index.html  --packages external && bun build --production --outdir=dist src/index.html"
   },
   "devDependencies": {
     "@types/bun": "latest",
